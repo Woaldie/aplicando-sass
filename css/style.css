@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Playfair+Display:wght@400;500&family=Poppins:ital,wght@1,200&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fcf5eb;
+}
+
+.title h1 {
+  text-align: center;
+  font-family: "Dela Gothic One", cursive;
+  color: #8d4617;
+}
+
+h2 {
+  text-align: center;
+  color: #806338;
+  font-family: "Poppins", sans-serif;
+}
+
+.banner {
+  width: 100%;
+}
+
+.divMain {
+  display: inline-block;
+  text-align: center;
+  margin: 1rem;
+}
+
+.animaciones {
+  transition-property: all;
+  transition-duration: 1s;
+}
+
+.animaciones:hover {
+  transform: scale(1.2);
+  border-radius: 5%;
+}
+
+.grilla {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 0.1fr 0.1fr 0.5fr 0.5fr 0.1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+}
+.grilla .prevNext {
+  grid-area: 1 / 1 / 2 / 4;
+}
+.grilla .prev {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.grilla .next {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.grilla .title {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.grilla .subtitle {
+  grid-area: 3 / 2 / 4 / 3;
+}
+.grilla .img {
+  grid-area: 3 / 1 / 6 / 2;
+}
+.grilla .h2Vid {
+  grid-area: 6 / 1 / 8 / 4;
+}
+.grilla .h2 {
+  grid-area: 6 / 2 / 7 / 3;
+}
+.grilla .vid {
+  grid-area: 7 / 2 / 8 / 3;
+}
+.grilla .text {
+  grid-area: 4 / 2 / 6 / 4;
+}
+.grilla a.right {
+  color: #2da1c1;
+  font-size: small;
+  text-decoration: none;
+  float: right;
+}
+.grilla a.right:hover {
+  color: #f90;
+  left: 252px;
+  float: right;
+  text-decoration: none;
+}
+.grilla a.left {
+  color: #2da1c1;
+  font-size: small;
+  text-decoration: none;
+  display: inline-block;
+}
+.grilla a.left:hover {
+  color: #f90;
+  text-decoration: none;
+  display: inline-block;
+}
+.grilla p {
+  display: inline;
+}
+.grilla .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  right: 6rem;
+  top: 3rem;
+}
+.grilla .text p {
+  margin-left: 3px;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #9897d5;
+}
+.grilla .subtitle {
+  position: relative;
+  top: 10rem;
+}
+.grilla iframe {
+  margin: 0% 29%;
+}
